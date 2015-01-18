@@ -22,6 +22,15 @@
                 background-color: navy;
 	}
         
+	#picchange
+	
+	{height: 800px;
+	background-color: gold;
+	
+	}
+	
+	
+	
         #tarin {float: left;
         padding: 100px;
         margin: right;
@@ -33,6 +42,11 @@
         margin: right;
         transition:all 0.5s;
         }
+	
+	#tarin3 {float: left;
+        padding: 100px;
+        margin: right;
+        transition:all 0.5s}
         
        #text{float: right;
        padding:  40px;
@@ -105,6 +119,10 @@ BUY NOW!! $$$$<br><br>
     </div>
 
 </div>
+
+
+
+
 hey ho
 <div id=dolo>hellow!
   <div id=tarin2>
@@ -130,29 +148,41 @@ BUY NOW!! $$$$<br><br>
   
     </H2><br>
    
-   
-   
-   
-   </div>
+    </div>
    
 
 </div>
 
+
+
+
+
+  
+
+
+</div>
+yeah man
 <!-- practicing picture change -->
-
-
-<div id= yolo>
+<div id=picchange>
+<div id=tarin3>
+   <img id="tarinchange" src="tarin.jpg" width= "500px"alt="tarin"> 
     
-<img id="theImage" src="http://31.media.tumblr.com/18b5f8f0a00ad01e50f7ae2f513be52d/tumblr_msqcl4iwM01soh1p8o1_500.png">
-<p><input type="button" id="theButton" value="click me!" onclick="pictureChange()"></p>
+    
+</div>    
+    
+ <input type="button" id="theButton" value="click me!" onclick="pictureChange()"></p>   
 </div>
 
 <script type="text/javascript">
+function pictureChange()
+{
+document.getElementById("tarinchange").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+}
+</script>
 
+<!-- practicing picture change -->
 
-
-
-
+<script type="text/javascript">
 function Scroll(){
 var top = document.getElementById('tarin');
 var ypos = window.pageYOffset;
@@ -186,12 +216,7 @@ else{
     
     
     
-    <script>
-function pictureChange()
-{
-document.getElementById("theImage").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
-}
-</script>
 
  
+
 </html>
