@@ -1,9 +1,12 @@
 var alterMainImage = function(data) {
-  console.log("data", data);
   $("#main-image").fadeOut(200/*milliseconds*/, function() {
     $(this).attr("src", data.url).fadeIn(200/*milliseconds*/);
   })
+
+  $(".description").text(data.desc);
+  $(".price").text("$" + data.price);
 };
+
 // This is saying;
 // As soon as jQuery is loaded, evaluate the scripts inside this function.
 $(document).ready(function() {
@@ -37,4 +40,6 @@ $(document).ready(function() {
 
   // Attach the image url to the main image container.
   $("#main-image").attr("src", images[0].url);
+  $(".description").text(images[0].desc);
+  $(".price").text("$" + images[0].price);
 })
